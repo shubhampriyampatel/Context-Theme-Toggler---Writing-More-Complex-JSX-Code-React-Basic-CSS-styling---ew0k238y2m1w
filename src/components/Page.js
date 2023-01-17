@@ -3,9 +3,9 @@ import { LocalThemedBox } from './LocalThemedBox';
 import { ThemeContext } from './ThemeProvider';
 
 const Page = () => {
-
+    const {globalBg} = React.useContext(ThemeContext)
     return(
-        <div className={"container"} id="themed-page">
+        <div className={`container bg-${globalBg}`} id="themed-page">
             <p id="themed-text-container">
                 lorem ipsum dolor iterit n stuff
             </p>
