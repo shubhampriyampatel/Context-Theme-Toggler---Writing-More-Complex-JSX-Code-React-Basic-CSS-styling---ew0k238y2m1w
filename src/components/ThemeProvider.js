@@ -9,7 +9,6 @@ const ThemeProvider = (props) =>{
     const changeGlobal=()=>{
         let theme = globalBg==='light'? 'dark' : 'light'
         setGlobalBg(theme)
-        console.log(globalBg)
         setBg(theme)
     }
 

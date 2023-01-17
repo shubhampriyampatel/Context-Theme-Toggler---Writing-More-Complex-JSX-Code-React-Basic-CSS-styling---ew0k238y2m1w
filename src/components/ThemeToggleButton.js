@@ -6,7 +6,7 @@ const ThemeToggleButton = () =>{
     const {globalBg,changeGlobal} = React.useContext(ThemeContext);
     return (
        <>
-       <button className={`btn-${globalBg==='light'?'light':'dark'}`} id="global-theme-toggler" onClick={changeGlobal}>Switch to {globalBg==='light'? 'light' : 'light'} theme</button>
+       <button className={`btn btn-${globalBg}`} id="global-theme-toggler" onClick={changeGlobal}>Switch to {globalBg==='light'? 'dark' : 'light'} theme</button>
        </>
     )
 
